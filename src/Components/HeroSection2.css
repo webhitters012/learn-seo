@@ -1,0 +1,56 @@
+.main-herosection2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: -30px;
+
+}
+
+.herosection2 {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    max-width: 1140px;
+    gap: 40px;
+}
+
+.herosection2-img {
+    max-width: 50%;
+
+}
+
+.herosection2-img img {
+    border-radius: 10px;
+    display: block;
+    max-width: 100%;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.herosection-div-of-text {
+    max-width: 50%;
+    text-align: center;
+    height: 9.375rem;
+    border-radius: 15px;
+    height: fit-content;
+}
+
+.first-p-of-herosection2 {
+    font-weight: bold;
+    font-size: larger;
+    color: black;
+}
+
+.main-p-of-herosection {
+    font-family: "Poppins", sans-serif;
+    font-size: medium;
+    text-align: justify;
+    line-height: 27px;
+    /* width: 500px; */
+
+
+}
+
+.h2-of-herosection2 {
+    margin-top: 0.5rem;
+
+}

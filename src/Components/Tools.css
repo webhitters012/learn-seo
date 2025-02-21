@@ -1,0 +1,86 @@
+.main-SEO-tool-section {
+  display: flex;
+  flex-direction: column; /* Stack items vertically */
+  align-items: center;
+  text-align: center;
+  position: relative;
+  margin-bottom: 26px;
+}
+
+
+.SEO-tool {
+  background-image: url("../assests/SEO/bg\ \(31\).jpg");
+  background-size: 100% 100%;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  border-radius: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  max-width: 1140px;
+  padding: 10px 10px;
+}
+.adf{
+  color: #de3335;
+}
+.flex-text {
+  align-items: center;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+}
+
+.p-of-SEO-tool {
+  line-height: 1.5rem;
+  /* width: 1150px; */
+  /* margin: 10px 8px; */
+  /* padding: 10px 10px; */
+}
+
+
+.tool-slider {
+
+  height: 102px;
+  width: 204px;
+  border-radius: 15px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  margin: 10px 10px;
+}
+.image-slider-wrapper {
+    overflow: hidden; /* Hides the scrollbar */
+    width: 98vw; /* Ensures it stays within screen width */
+    position: relative;
+    white-space: nowrap;
+}
+
+.image-slider {
+  display: flex;
+  animation: scroll 20s linear infinite;
+}
+
+.image-slider img {
+   /* Ensure images take full width of their container */
+  height: auto;
+  margin-right: 10px;
+  flex-shrink: 0; /* Prevent images from shrinking beyond their intrinsic size */
+}
+
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+/* Media query for smaller screens */
+@media (max-width: 768px) {
+ 
+}
+
+/* Media query for even smaller screens */
+@media (max-width: 480px) {
+  
+}

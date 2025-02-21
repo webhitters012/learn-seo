@@ -1,0 +1,69 @@
+/* Center the stats section */
+.stats-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 60px; /* Increased space between boxes */
+    flex-wrap: wrap;
+    padding: 40px;
+}
+
+/* Wrapper for each item */
+.stat-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+.stat-box-wrapper{
+    text-align: center;
+}
+/* Diamond-shaped box */
+.stat-box {
+    width: 130px;
+    height: 130px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    border: 2px solid #e74c3c;
+    transition: all 0.3s ease-in-out;
+    overflow: hidden;
+}
+
+/* Inner content rotated back */
+.stat-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Icon styles */
+.stat-icon {
+    font-size: 28px;
+    color: #de3335;
+}
+
+/* Number styles */
+.stat-number {
+    font-size: 20px;
+    font-weight: bold;
+    color: #333;
+    margin-top: 5px;
+}
+
+/* Label (below diamond, with increased gap) */
+.stat-label {
+    font-size: 18px;
+    color: black;
+    text-align: center;
+    margin-top: 50px; /* Increased gap between diamond and label */
+    justify-content: center;
+}
+
+/* Hover effect */
+.stat-box:hover {
+    border-color:black;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.6);
+}

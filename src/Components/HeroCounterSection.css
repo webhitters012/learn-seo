@@ -1,0 +1,86 @@
+.herosection {
+    position: relative;
+    height: 100%;
+    width: 100%;
+    z-index: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.herosection::before {
+    content: "";
+    top: 0;
+    left: 0;
+    display: block;
+    height: 550px;
+    width: 100%;
+    background-image: url("../assests/Technical_SEO_Training_Zirakpur.webp");
+    /* background-image: url("../assests/Technical\ SEO\ Training\ Zirakpur.jpg"); */
+    background-size: cover;
+    filter: blur(0px);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    /* box-shadow: 0 3px 10px rgb(0 0 0 / 0.2); */
+    z-index: -4;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    z-index: -2;
+}
+
+.main-number-section-of-hero {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    top: 0px;
+    max-height: 100vh;
+    margin: 0px 0px;
+    top: -78px;
+    z-index: 2;
+}
+
+.number-section-of-hero {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: auto;
+    width: 50rem;
+    background: linear-gradient(135deg, #ff6347, #4a4a4a);
+    border-radius: 15px;
+    padding: 20px;
+    text-align: center;
+    color: #fff;
+    font-family: Arial, sans-serif;
+    flex-direction: column;
+    transition: transform 0.3s ease-out, background-color 0.3s ease-out;
+    /* box-shadow: rgb(38, 57, 77) 0px 60px 30px -10px; */
+    overflow: hidden;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+}
+
+.numberdiv {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 100%;
+    margin-top: 20px;
+    position: relative;
+}
+
+.no1,
+.no2,
+.no3,
+.no4 {
+    text-align: center;
+    padding: 10px;
+}
+
+.for-plus h1 {
+    font-size: 1.6rem;
+    margin: 0;
+    font-weight: bold;
+    animation: count-up 2s ease-out forwards;
+}

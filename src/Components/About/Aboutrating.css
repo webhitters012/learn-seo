@@ -1,0 +1,25 @@
+.review-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    padding: 20px;
+  }
+  
+  .review-link {
+    text-decoration: none;
+  }
+  
+  .review-image {
+    width: 150px;
+    height: auto;
+    transition: transform 0.3s ease-in-out;
+    border-radius: 10px;
+  }
+  
+  .review-image:hover {
+    transform: scale(1.1);
+  }
+  .ity{
+    text-align:center;
+  }

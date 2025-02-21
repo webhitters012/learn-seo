@@ -1,0 +1,111 @@
+/* 6-6 COLUMN LAYOUT */
+.main-section-of-company-review {
+    margin-top: 47px;
+    max-height: fit-content;
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* Equal columns */
+    align-items: center;
+    justify-content: center;
+    max-width: 1140px;
+    gap: 20px;
+}
+
+.img-of-review-section-main {
+    padding: 20px 10px;
+}
+
+.img-of-pic {
+    display: block;
+    width: 100%; /* Ensures image responsiveness */
+    object-fit: cover;
+}
+
+.img-of-company-review {
+    text-align: center;
+    width: 100%; /* Full width of its column */
+}
+
+.img-of-company-review h2 {
+    margin-bottom: 25px;
+}
+
+.img-of-company-review h3 {
+    margin-top: 17px;
+}
+
+.review-of-company {
+    gap: 10px;
+    display: flex;
+    justify-content: center;
+}
+
+.review-images-of-google-justdial-fb {
+    height: fit-content;
+    width: fit-content;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+}
+
+/* IMAGE SLIDER */
+.newslider {
+    width: 173px !important;
+}
+
+.tool-slider {
+    height: 102px;
+    width: 204px;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2), 0 6px 20px rgba(0, 0, 0, 0.19);
+    margin: 10px 10px;
+}
+
+.image-slider-wrapper1 {
+    width: 100%;
+    overflow: hidden;
+    overflow: hidden; /* Hides the scrollbar */
+    width: 50vw; /* Ensures it stays within screen width */
+}
+
+.image-slider {
+    display: flex;
+    animation: scroll 10s linear infinite;
+}
+
+.image-slider img {
+    height: auto;
+    margin-right: 10px;
+    flex-shrink: 0;
+}
+
+/* ANIMATION */
+@keyframes scroll {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(-100%);
+    }
+}
+
+/* RESPONSIVE DESIGN */
+@media (max-width: 768px) {
+    .main-section-of-company-review {
+        grid-template-columns: 1fr; /* Stack sections vertically on smaller screens */
+    }
+    
+    .img-of-company-review,
+    .img-of-review-section-main {
+        width: 100%;
+    }
+}
+
+@media (max-width: 480px) {
+    .tool-slider {
+        width: 150px;
+        height: 80px;
+    }
+
+    .image-slider {
+        animation: scroll 15s linear infinite; /* Slower animation for small screens */
+    }
+}
